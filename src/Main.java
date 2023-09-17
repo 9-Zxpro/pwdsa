@@ -1,6 +1,8 @@
 //import java.util.ArrayList;
 //import java.util.Collections;
 
+import org.jetbrains.annotations.NotNull;
+
 public class Main {
 
 //    static int c = 0;
@@ -12,18 +14,16 @@ public class Main {
 //        return max(n, k+1, Math.max(n[k], m));
 //    }
 
-    static String s = "";
-    private static String stringMnp(String n, int k) {
+    private static boolean stringMnp(@NotNull String n, int l, int r) {
+        if (l >= r ) return true;
+        return (n.charAt(l) == n.charAt(r) && stringMnp(n, l+1, r-1));
 
-        if(k==n.length()) return s;
-        if(n.charAt(k) != 'a') s += n.charAt(k);
-        return stringMnp(n, k+1);
     }
 
     public static void main(String[] args) {
 //        int[] arr = {3,5,16,8,9,2,2};
 
-        System.out.println(stringMnp("amanpatel", 0) + " ");
+        System.out.println(stringMnp("naeemeean", 0, 8) + " ");
 
 //        Scanner sc = new Scanner(System.in);
 //        int n = sc.nextInt();
