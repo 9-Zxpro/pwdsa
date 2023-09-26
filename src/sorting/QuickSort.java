@@ -8,31 +8,73 @@ public class QuickSort {
             quickSort(a, pvt+1, right);
         }
     }
+//    static int partition(int[] a, int left, int right) {
+//        int pivot = left;
+//        boolean flag = false;
+//
+//        while(left < right) {
+//            int tmp;
+//
+//            while(a[pivot] < a[right]) --right;
+//
+//            if(right == pivot) flag = true;
+//            else{
+//                tmp = a[right];
+//                a[right] = a[pivot];
+//                a[pivot] = tmp;
+//                pivot = right;
+//            }
+//
+//            if(!flag) {
+//                while(a[pivot] > a[left]) ++left;
+//
+//                if(left == pivot) flag = true;
+//                else{
+//                    tmp = a[left];
+//                    a[left] = a[pivot];
+//                    a[pivot] = tmp;
+//                    pivot = left;
+//                }
+//            }
+//        }
+//        return pivot;
+//    }
+
+//    second method ✍️👇
     static int partition(int[] a, int left, int right) {
         int pivot = left;
         boolean flag = false;
-        while(left < right) {
-            while(a[pivot] < a[right]) right--;
-            if(right == pivot) flag = true;
-            else{
-                int tmp = a[right];
-                a[right] = a[pivot];
-                a[pivot] = tmp;
-                pivot = right;
-            }
-            if(!flag) {
-                while(a[pivot] > a[left]) left++;
-                if(left == pivot) flag = true;
-                else{
-                    int tmp = a[left];
-                    a[left] = a[pivot];
+
+        while(true) {
+            int tmp;
+
+            do {
+                if (left >= right) return pivot;
+
+                while(a[pivot] < a[right]) --right;
+
+                if (right == pivot) flag = true;
+                else {
+                    tmp = a[right];
+                    a[right] = a[pivot];
                     a[pivot] = tmp;
-                    pivot = left;
+                    pivot = right;
                 }
+            } while(flag);
+
+            while(a[pivot] > a[left]) ++left;
+
+            if (left == pivot) flag = true;
+            else {
+                tmp = a[left];
+                a[left] = a[pivot];
+                a[pivot] = tmp;
+                pivot = left;
             }
         }
-        return pivot;
     }
+
+
     public static void main(String[] args) {
         int[] val = {27, 10, 36, 18, 25, 45};
         quickSort(val, 0, val.length-1);
