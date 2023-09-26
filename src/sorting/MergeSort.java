@@ -17,9 +17,7 @@ public class MergeSort {
         while (j <= rInd) {
             tmp[c++] = a[j++];
         }
-        for (int k = lInd; k < c; k++){
-            a[k] = tmp[k];
-        }
+        if (c - lInd >= 0) System.arraycopy(tmp, lInd, a, lInd, c - lInd);
     }
 
     static void mergeSort(int[] a, int lInd, int rInd) {
