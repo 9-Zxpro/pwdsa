@@ -1,7 +1,5 @@
 package searching;
 
-import java.util.Scanner;
-
 public class LinearSearch {
     static int linearSearch(int[] a, int v) {
         for (int x=0; x<a.length; x++) {

@@ -1,7 +1,5 @@
 package searching;
 
-import java.util.Scanner;
-
 public class BinarySearch {
 //    static int binarySearch(int[] a, int v) {
 //        int beg = 0, mid, end = a.length-1;
