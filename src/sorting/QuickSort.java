@@ -76,7 +76,7 @@ public class QuickSort {
 
 
     public static void main(String[] args) {
-        int[] val = {27, 10, 36, 18, 25, 45};
+        int[] val = {27, 10, 9, 7, 6, 45};
         quickSort(val, 0, val.length-1);
         for (int v : val) {
             System.out.print(v + " ");
