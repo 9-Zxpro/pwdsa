@@ -1,6 +1,8 @@
 package binaryTree;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Queue;
 
 public class BinaryTree {
@@ -58,16 +60,25 @@ public class BinaryTree {
         nthLevelTraverse(root.right, n-1);
 
     }
-    public static void bfsTraverse(Node root) {
+    public static List<List<Integer>> bfsTraverse(Node root) {
+        List<List<Integer>> list = new LinkedList<>();
+        if(root==null) return list;
         Queue<Node> q = new LinkedList<>();
-        if(root!=null) q.add(root);
+        q.offer(root);
         while (!q.isEmpty()){
-            Node tmp = q.peek();
-            if(tmp.left!=null) q.add(tmp.left);
-            if(tmp.right!=null) q.add(tmp.right);
-            System.out.println(tmp.val);
-            q.remove();
+            int q_size = q.size();
+            List<Integer> subList = new ArrayList<>();
+            for(int i = 0; i<q_size; i++) {
+                Node tmp = q.poll();
+                if(tmp.left!=null) q.add(tmp.left);
+                if(tmp.right!=null) q.add(tmp.right);
+                subList.add(tmp.val);
+                System.out.print(tmp.val+" ");
+            }
+            list.add(subList);
+            System.out.println();
         }
+        return list;
     }
 
     public static Node constructTree(String[] arr) {
@@ -100,18 +111,24 @@ public class BinaryTree {
         }
         return root;
     }
+
+    static void iterative_preOrder(){}
+    static void iterative_inOrder(){}
+    static void iterative_postOrder(){}
     public static void main(String[] arg) {
+
         String[] trees = {"1", "2","3","4", "5", "", "6", "","7","","","8","","","","9",""};
         Node rootOfTree  = constructTree(trees);
 //        boundary(rootOfTree);
-        nthLevelTraverse(rootOfTree, 2);
+//        nthLevelTraverse(rootOfTree, 2);
 //        display(root);
 //        System.out.println(size(root));
 //        System.out.println(sum(root));
 //        System.out.println(max(root));
 //        System.out.println(height(root));
 //        pip(2);
-//        bfsTraverse(rootOfTree);
+        System.out.println(bfsTraverse(rootOfTree));
+
     }
 
     private static void boundary(Node root) {

@@ -3,8 +3,6 @@ package recursion;
 //import java.util.ArrayList;
 //import java.util.Collection
 
-import org.jetbrains.annotations.NotNull;
-
 public class Main {
 
 //    static int c = 0;
@@ -16,7 +14,7 @@ public class Main {
 //        return max(n, k+1, Math.max(n[k], m));
 //    }
 
-    private static boolean stringMnp(@NotNull String n, int l, int r) {
+    private static boolean stringMnp(String n, int l, int r) {
         if (l >= r ) return true;
         return (n.charAt(l) == n.charAt(r) && stringMnp(n, l+1, r-1));
 

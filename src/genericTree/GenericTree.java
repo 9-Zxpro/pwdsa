@@ -21,7 +21,7 @@ public class GenericTree {
         root.child.add(new Node(2));
         root.child.add(new Node(3));
         root.child.add(new Node(4));
-        Node child1 = root.child.get(0);
+        Node child1 = root.child.getFirst();
         child1.child.add(new Node(5));
         child1.child.add(new Node(6));
         Node child2 = root.child.get(1);
