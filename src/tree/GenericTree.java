@@ -1,4 +1,4 @@
-package genericTree;
+package tree;
 
 
 import java.util.ArrayList;
@@ -6,33 +6,33 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-class Node {
+class GNode {
     int val;
-    List<Node> child;
+    List<GNode> child;
 
-    Node(int val) {
+    GNode(int val) {
         this.val = val;
         child = new ArrayList<>();
     }
 }
 public class GenericTree {
 
-    static void formTree(Node root){
-        root.child.add(new Node(2));
-        root.child.add(new Node(3));
-        root.child.add(new Node(4));
-        Node child1 = root.child.getFirst();
-        child1.child.add(new Node(5));
-        child1.child.add(new Node(6));
-        Node child2 = root.child.get(1);
-        child2.child.add(new Node(3));
-        child2.child.add(new Node(8));
-        child2.child.add(new Node(9));
-        Node child3 = root.child.get(2);
-        child3.child.add(new Node(8));
+    static void formTree(GNode root){
+        root.child.add(new GNode(2));
+        root.child.add(new GNode(3));
+        root.child.add(new GNode(4));
+        GNode child1 = root.child.getFirst();
+        child1.child.add(new GNode(5));
+        child1.child.add(new GNode(6));
+        GNode child2 = root.child.get(1);
+        child2.child.add(new GNode(3));
+        child2.child.add(new GNode(8));
+        child2.child.add(new GNode(9));
+        GNode child3 = root.child.get(2);
+        child3.child.add(new GNode(8));
     }
 
-    static void preOrdTraverse(Node root) {
+    static void preOrdTraverse(GNode root) {
         if(root.child.isEmpty()){
             System.out.print(root.val+" ");
             return;
@@ -42,7 +42,7 @@ public class GenericTree {
             preOrdTraverse(root.child.get(i));
         }
     }
-    static void postOrdTraverse(Node root) {
+    static void postOrdTraverse(GNode root) {
         if(root.child.isEmpty()){
             System.out.print(root.val+" ");
             return;
@@ -53,7 +53,7 @@ public class GenericTree {
         System.out.print(root.val+" ");
     }
 
-    static int findMax(Node root) {
+    static int findMax(GNode root) {
         if(root.child.isEmpty()){
             return root.val;
         }
@@ -63,11 +63,11 @@ public class GenericTree {
         return 0;
     }
 
-    static void levelOrdTraverse(Node root) {
-        Queue<Node> q = new LinkedList<>();
+    static void levelOrdTraverse(GNode root) {
+        Queue<GNode> q = new LinkedList<>();
         q.add(root);
         while(!q.isEmpty()) {
-            Node n = q.poll();
+            GNode n = q.poll();
             System.out.print(n.val+" ");
             int l = n.child.size();
             for(int i=0; i<l; i++){
@@ -76,11 +76,11 @@ public class GenericTree {
         }
     }
 
-    static void mirror(Node root) {
-        Queue<Node> q = new LinkedList<>();
+    static void mirror(GNode root) {
+        Queue<GNode> q = new LinkedList<>();
         q.add(root);
         while(!q.isEmpty()) {
-            Node n = q.poll();
+            GNode n = q.poll();
             System.out.print(n.val+" ");
             int l = n.child.size();
             for(int i=0; i<l; i++){
@@ -89,11 +89,11 @@ public class GenericTree {
         }
     }
 
-    static void zigzagTraverse(Node root) {
-        Queue<Node> q = new LinkedList<>();
+    static void zigzagTraverse(GNode root) {
+        Queue<GNode> q = new LinkedList<>();
         q.add(root);
         while(!q.isEmpty()) {
-            Node n = q.poll();
+            GNode n = q.poll();
             System.out.print(n.val+" ");
             int l = n.child.size();
             for(int i=0; i<l; i++){
@@ -102,7 +102,7 @@ public class GenericTree {
         }
     }
     public static void main(String[] args) {
-        Node root = new Node(1);
+        GNode root = new GNode(1);
         formTree(root);
         preOrdTraverse(root);
         System.out.println();

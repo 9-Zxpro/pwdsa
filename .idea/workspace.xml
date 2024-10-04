@@ -4,31 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92544bf4-7fa1-4d9c-a86a-a8c2aae05967" name="Changes" comment="heap done">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CodeVita.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Codeforces.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graph/AdjListGraph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graph/Dijkstra.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graph/Graph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graph/KruskalAlgo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graph/Pair.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/greedy/FractionalKnapSack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java8/AAA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java8/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java8/GfgLive.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java8/GfgLiveHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java8/JavaStreams.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java8/Lambd.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utility/Util.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="92544bf4-7fa1-4d9c-a86a-a8c2aae05967" name="Changes" comment="graph dijkstra done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/binaryTree/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/binaryTree/BinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/genericTree/GenericTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/genericTree/GenericTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/heap/Heap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/heap/Heap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/recursion/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recursion/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/recursion/palindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recursion/palindrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/binaryTree/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/BinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/binaryTree/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bst/BinarySTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bst/BinarySTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/genericTree/GenericTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/GenericTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graph/Dijkstra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/Dijkstra.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,31 +71,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.AAA.executor": "Run",
-    "Application.App.executor": "Run",
-    "Application.Dijkstra.executor": "Run",
-    "Application.GfgLive.executor": "Run",
-    "Application.JavaStreams.executor": "Run",
-    "Application.KruskalAlgo.executor": "Run",
-    "Application.Lambd.executor": "Run",
-    "Application.MultiTheading.executor": "Run",
-    "Application.MultiThreading.executor": "Run",
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/springboot-project/mannamovies/mannamovies",
-    "settings.editor.selected.configurable": "preferences.keymap"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.AAA.executor&quot;: &quot;Run&quot;,
+    &quot;Application.App.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Dijkstra.executor&quot;: &quot;Run&quot;,
+    &quot;Application.GfgLive.executor&quot;: &quot;Run&quot;,
+    &quot;Application.JavaStreams.executor&quot;: &quot;Run&quot;,
+    &quot;Application.KruskalAlgo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Lambd.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MultiTheading.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MultiThreading.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/springboot-project/dating-bot&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.Dijkstra">
     <configuration name="AAA" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="java8.AAA" />
@@ -343,7 +325,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700674499468</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="graph dijkstra done">
+      <option name="closed" value="true" />
+      <created>1727151354941</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1727151354941</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -374,7 +364,8 @@
     <MESSAGE value="shell sort done" />
     <MESSAGE value="bucket sort done" />
     <MESSAGE value="heap done" />
-    <option name="LAST_COMMIT_MESSAGE" value="heap done" />
+    <MESSAGE value="graph dijkstra done" />
+    <option name="LAST_COMMIT_MESSAGE" value="graph dijkstra done" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

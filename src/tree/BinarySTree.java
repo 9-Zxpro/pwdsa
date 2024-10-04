@@ -1,7 +1,4 @@
-package bst;
-
-import binaryTree.BinaryTree;
-import binaryTree.Node;
+package tree;
 
 public class BinarySTree {
 
