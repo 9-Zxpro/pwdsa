@@ -43,25 +43,24 @@ public class SinglyLinkedList {
         SinglyLLNode newNode = new SinglyLLNode(data);
         if(this.head == null) {
             this.head = this.tail = newNode;
-        } else {
-            SinglyLLNode preTemp, tmp = this.head;
-            while (tmp != null) {
+        }
+        if (this.head.getData() == beforeNodeData){     //insertAtBeginning
+            newNode.setNext(this.head);
+            this.head = newNode;
+        }
+            SinglyLLNode preTemp = null, tmp = this.head;
+            while (tmp != null && tmp.getData() != beforeNodeData) {
                 preTemp = tmp;
-                if (this.head.getData() == beforeNodeData){
-                    newNode.setNext(this.head);
-                    this.head = newNode;
-                    break;
-                }
-                else if (tmp.getData() == beforeNodeData) {
-                    newNode.setNext(tmp.getNext());
-                    preTemp.setNext(newNode);
-                    break;
-                }
                 tmp = tmp.getNext();
             }
             if(tmp == null) System.out.println(beforeNodeData + "not found ");
-        }
+            else {
+                newNode.setNext(tmp);
+                preTemp.setNext(newNode);
+            }
+
     }
+
     public void addNodeAfter(int data, int afterNode) {
         SinglyLLNode newNode = new SinglyLLNode(data);
         if(this.head == null) {
@@ -79,6 +78,55 @@ public class SinglyLinkedList {
             else System.out.println(afterNode + "not found ");
         }
     }
+
+    public void deleteAtBeg() {
+        if (this.head == null) {
+            System.out.println("List is empty. Cannot delete.");
+        } else {
+            this.head = this.head.getNext();
+            if (this.head == null) {
+                this.tail = null; // List became empty
+            }
+        }
+    }
+
+    public void deleteAtEnd() {
+        if (this.head == null) {
+            System.out.println("List is empty. Cannot delete.");
+        } else if (this.head == this.tail) {
+            this.head = this.tail = null; // Single node in the list
+        } else {
+            SinglyLLNode tmp = this.head;
+            while (tmp.getNext() != this.tail) {
+                tmp = tmp.getNext();
+            }
+            tmp.setNext(null);
+            this.tail = tmp;
+        }
+    }
+
+    public void deleteNode(int data) {
+        if (this.head == null) {
+            System.out.println("List is empty. Cannot delete.");
+        } else if (this.head.getData() == data) {
+            deleteAtBeg();
+        } else {
+            SinglyLLNode tmp = this.head, preTemp = null;
+            while (tmp != null && tmp.getData() != data) {
+                preTemp = tmp;
+                tmp = tmp.getNext();
+            }
+            if (tmp == null) {
+                System.out.println(data + " not found in the list.");
+            } else {
+                preTemp.setNext(tmp.getNext());
+                if (tmp == this.tail) {
+                    this.tail = preTemp; // Update tail if the deleted node was the last
+                }
+            }
+        }
+    }
+
     public void display() {
         SinglyLLNode tmp = this.head;
         while(tmp != null) {

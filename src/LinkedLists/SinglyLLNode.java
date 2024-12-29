@@ -3,6 +3,7 @@ package LinkedLists;
 public class SinglyLLNode {
     private int data;
     private SinglyLLNode next;
+
     public SinglyLLNode(int data){
         this.data=data;
     }

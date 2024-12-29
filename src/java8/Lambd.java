@@ -1,5 +1,6 @@
 package java8;
 
+
 import java.util.*;
 import java.util.function.Consumer;
 import java.util.function.Function;
@@ -28,6 +29,24 @@ interface InnerLambd {
 //
 //    }
 //}
+
+class Pair implements Comparable<Pair>{
+    int key;
+    int val;
+    Pair(int key, int val) {
+        this.key = key;
+        this.val = val;
+    }
+    public int compareTo(Pair p) {
+        if(this.val != p.val) {
+            return p.val - this.val;  //descending order
+//            return this.val - p.val;  //Ascending order
+        } else {
+            return p.key - this.key;  //Descending order
+        }
+    }
+}
+
 public class Lambd {
 
     public static void main(String[] args) {
@@ -90,6 +109,50 @@ public class Lambd {
                 else return -1;
             }
         };
+
+        Comparator<Pair> cmp = (o1, o2) -> {
+            if(o2.val != o1.val) {
+                return o2.val - o1.val;
+            } else {
+                return o2.key - o1.key;
+            }
+        };
+//        Comparator<Integer> customComparator = new Comparator<Integer>() {
+//            @Override
+//            public int compare(Integer key1, Integer key2) {
+//                // First, get the values associated with the keys
+//                int value1 = treeMap.get(key1);
+//                int value2 = treeMap.get(key2);
+//
+//                // Compare by values first
+//                if (value1 != value2) {
+//                    return Integer.compare(value1, value2); // Ascending order by values
+//                }
+//
+//                // If values are equal, compare by keys
+//                return Integer.compare(key1, key2); // Ascending order by keys
+//            }
+//        };
+
+        // Create the TreeMap with the custom comparator
+//        Map<Integer, Integer> treeMap = new TreeMap<>((k1, k2) -> {
+//            int v1 = treeMap.get(k1);
+//            int v2 = treeMap.get(k2);
+//        });
+//        Map<Integer, Integer> treeMap = new TreeMap<>(new Comparator<Integer>() {
+//            @Override
+//            public int compare(Integer key1, Integer key2) {
+//                int value1 = treeMap.get(key1); // Get value for key1
+//                int value2 = treeMap.get(key2); // Get value for key2
+//
+//                // Compare by values first
+//                if (value1 != value2) {
+//                    return Integer.compare(value1, value2); // Ascending order by value
+//                } else {
+//                    return Integer.compare(key1, key2); // Ascending order by key if values are equal
+//                }
+//            }
+//        });
 
         System.out.println(Math.pow(12, 4));
         System.out.println(12^4);

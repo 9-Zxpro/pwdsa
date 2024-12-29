@@ -4,13 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92544bf4-7fa1-4d9c-a86a-a8c2aae05967" name="Changes" comment="graph dijkstra done">
+    <list default="true" id="92544bf4-7fa1-4d9c-a86a-a8c2aae05967" name="Changes" comment="c: misc">
+      <change afterPath="$PROJECT_DIR$/src/cp/DifferenceArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cp/FastInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cp/KMPAlgo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cp/ZAlgorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java8/patterns/Singleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/queue/Queues.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stack/Stacks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tree/FenwickTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tree/SegmentTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tree/TreeOfSpace.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/trie/Trie.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/binaryTree/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/BinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/binaryTree/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bst/BinarySTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bst/BinarySTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/genericTree/GenericTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/GenericTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graph/Dijkstra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/Dijkstra.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedLists/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedLists/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedLists/SinglyLLNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedLists/SinglyLLNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedLists/SinglyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedLists/SinglyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/heap/Heap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/heap/Heap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java8/Lambd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java8/Lambd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sorting/HeapSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sorting/HeapSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utility/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/Util.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,38 +84,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Application.AAA.executor&quot;: &quot;Run&quot;,
-    &quot;Application.App.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Dijkstra.executor&quot;: &quot;Run&quot;,
-    &quot;Application.GfgLive.executor&quot;: &quot;Run&quot;,
-    &quot;Application.JavaStreams.executor&quot;: &quot;Run&quot;,
-    &quot;Application.KruskalAlgo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Lambd.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MultiTheading.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MultiThreading.executor&quot;: &quot;Run&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/springboot-project/dating-bot&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.AAA.executor": "Run",
+    "Application.App.executor": "Run",
+    "Application.DifferenceArray.executor": "Debug",
+    "Application.Dijkstra.executor": "Run",
+    "Application.GfgLive.executor": "Run",
+    "Application.Heap.executor": "Run",
+    "Application.HeapSort.executor": "Run",
+    "Application.JavaStreams.executor": "Run",
+    "Application.KruskalAlgo.executor": "Run",
+    "Application.Lambd.executor": "Run",
+    "Application.MultiTheading.executor": "Run",
+    "Application.MultiThreading.executor": "Run",
+    "Application.Singleton.executor": "Run",
+    "Application.Stacks.executor": "Run",
+    "Application.TreeOfSpace.executor": "Run",
+    "Application.Trie.executor": "Run",
+    "Application.ZAlgorithm.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/springboot-project/dating-bot",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
-  <component name="RunManager" selected="Application.Dijkstra">
-    <configuration name="AAA" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="java8.AAA" />
+}]]></component>
+  <component name="RunManager" selected="Application.Singleton">
+    <configuration name="DifferenceArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cp.DifferenceArray" />
       <module name="pwdsa" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="java8.*" />
+          <option name="PATTERN" value="cp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -110,12 +131,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="java8.App" />
+    <configuration name="Heap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="heap.Heap" />
       <module name="pwdsa" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="java8.*" />
+          <option name="PATTERN" value="heap.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,12 +144,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Dijkstra" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="graph.Dijkstra" />
+    <configuration name="HeapSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sorting.HeapSort" />
       <module name="pwdsa" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="graph.*" />
+          <option name="PATTERN" value="sorting.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -136,12 +157,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GfgLive" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="java8.GfgLive" />
+    <configuration name="Singleton" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="java8.patterns.Singleton" />
       <module name="pwdsa" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="java8.*" />
+          <option name="PATTERN" value="java8.patterns.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -149,12 +170,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KruskalAlgo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="graph.KruskalAlgo" />
+    <configuration name="ZAlgorithm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cp.ZAlgorithm" />
       <module name="pwdsa" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="graph.*" />
+          <option name="PATTERN" value="cp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -164,11 +185,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Dijkstra" />
-        <item itemvalue="Application.AAA" />
-        <item itemvalue="Application.KruskalAlgo" />
-        <item itemvalue="Application.GfgLive" />
-        <item itemvalue="Application.App" />
+        <item itemvalue="Application.Singleton" />
+        <item itemvalue="Application.ZAlgorithm" />
+        <item itemvalue="Application.DifferenceArray" />
+        <item itemvalue="Application.Heap" />
+        <item itemvalue="Application.HeapSort" />
       </list>
     </recent_temporary>
   </component>
@@ -333,7 +354,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727151354941</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="c: misc">
+      <option name="closed" value="true" />
+      <created>1728050494304</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1728050494304</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -365,7 +394,19 @@
     <MESSAGE value="bucket sort done" />
     <MESSAGE value="heap done" />
     <MESSAGE value="graph dijkstra done" />
-    <option name="LAST_COMMIT_MESSAGE" value="graph dijkstra done" />
+    <MESSAGE value="c: misc" />
+    <option name="LAST_COMMIT_MESSAGE" value="c: misc" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/tree/TreeOfSpace.java</url>
+          <line>102</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
